@@ -59,8 +59,7 @@ Tracing:
         Native support for OpenTracing
         All Jaeger backend components expose Prometheus metrics by default (other metrics backends are also supported). 
         Logs are written to standard out using the structured logging library zap.
-        Jaeger uses Thrift (https://github.com/jaegertracing/jaeger-idl) not gRPC (and Protocol Buffers) [ seems like gRPC
-        is not very popular and the future is questionable ]
+        Jaeger uses Thrift (https://github.com/jaegertracing/jaeger-idl) not gRPC (and Protocol Buffers) [ thrift has some advantages, especially when in a Non-Golang environment, but is more complex ]
         No Multi Tenant support at the moment, but it's being discussed.
        
     Openstack Tracing - Implemented by Fabian W 
